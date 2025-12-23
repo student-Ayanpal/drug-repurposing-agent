@@ -40,6 +40,26 @@ This platform uses a multi-agent AI architecture to:
 - HTML, CSS, JavaScript
 
 ---
+## 📁 Project Structure
+```text
+drug-repurposing-agent/
+│
+├── index.html              # Frontend entry point (GitHub Pages)
+├── script.js               # Frontend logic (API calls to backend)
+├── styles.css              # Frontend styling
+│
+├── backend/                # FastAPI backend (deployed on Render)
+│   ├── __init__.py         # Marks backend as a Python package
+│   ├── main.py             # API routes, master agent, PDF generation
+│   ├── clinical_agent.py   # Clinical intelligence agent
+│   ├── patent_agent.py     # Patent & IP intelligence agent
+│   ├── market_agent.py     # Market intelligence agent
+│   └── requirements.txt    # Backend dependencies
+│
+├── .gitignore              # Git ignore rules
+├── LICENSE                 # MIT License
+└── README.md               # Project documentation
+```
 
 ## ▶️ How to Run Locally
 
@@ -49,7 +69,7 @@ cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-
+---
 ## Frontend
 Open `frontend/index.html` in your browser.
 
@@ -65,4 +85,11 @@ Open `frontend/index.html` in your browser.
 - **Soumyadeep Purkayastha** – Frontend & UI  
 - **Rupam Mukherjee** – Content & Presentation  
 - **Soumitra De** – Data & ML  
-- **Pabitra** – Testing & Deployment  
+- **Pabitra** – Testing & Deployment
+---
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this software with proper attribution.  
+See the [LICENSE](LICENSE) file for more details.
+
