@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agentic Repurposing Engine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-header">
+        <div class="header-content">
+            <h1>🔬 Agentic Repurposing Engine</h1>
+            <p class="subtitle">Prototype — demo with dummy agents & PDF generation</p>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="input-row card-action">
+            <input id="drug-input" placeholder="Enter Generic Drug Name (e.g., Atorvastatin)..." />
+            <button id="analyze-btn">Generate Comprehensive Report</button>
+        </div>
+
+        <div id="status" role="status">Ready to analyze.</div>
+
+        <div id="report-container" class="card result-card" style="display:none;">
+            <h2><span role="img" aria-label="report">📄</span> Innovation Story Report</h2>
+            <pre id="result">Report will appear here.</pre>
+            <div class="controls">
+                <button id="pdf-btn" class="pdf-download-btn" style="display:inline-block;">📥 Download PDF Report</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Hackathon Project — Agentic AI Solution</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
