@@ -9,9 +9,10 @@ import datetime
 import re
 
 # 🔗 Import your real agent functions
-from clinical_agent import clinical_agent          # returns clinical summary string
-from patent_agent import patent_agent_summary      # returns patent summary string
-from market_agent import market_agent_summary            # returns market summary string
+from .clinical_agent import clinical_agent
+from .patent_agent import patent_agent_summary
+from .market_agent import market_agent_summary
+
 
 app = FastAPI(title="Agentic Repurposing Engine (Prototype)")
 
